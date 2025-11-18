@@ -19,3 +19,7 @@ a {
   /* color: #86909c; */
   /* color: #515767; */
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

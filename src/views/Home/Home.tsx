@@ -2,6 +2,9 @@ import React, { memo, useState } from 'react'
 import { Outlet, useNavigate } from 'react-router'
 import styled from 'styled-components'
 import { AndroidOutlined, TagOutlined, AppleOutlined, AppstoreAddOutlined, BlockOutlined, FileTextOutlined, FormatPainterOutlined, GlobalOutlined, HddOutlined, LayoutOutlined, PartitionOutlined } from '@ant-design/icons'
+import Aside from '../Asides/Aside'
+import Rankings from '../Asides/Rankings'
+import Advertise from '../Asides/Advertise'
 
 const menu = [
   {
@@ -76,6 +79,7 @@ const Home: React.FC = memo(() => {
           {
             menu.map((item, index) => (
               <MenuItem
+                key={item.path}
                 onClick={() => handleClick(index, item.path)}
                 className={index === isActive ? 'active' : ''}>
                 {item.icon}
@@ -89,7 +93,13 @@ const Home: React.FC = memo(() => {
         <div>
           <Outlet />
         </div>
-        <Aside />
+        <Asides>
+          <Aside />
+          <Rankings />
+          <Advertise />
+          <Advertise />
+          <Advertise />
+        </Asides>
       </Section>
     </Container>
   )
@@ -127,11 +137,11 @@ const Section = styled.section`
   gap: 18px;
 `
 
-const Aside = styled.div`
-  flex-basis: 55%;
-  background-color: pink;
-  height: 300px;
-  border-radius: 5px;
+const Asides = styled.aside`
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 `
 const MenuList = styled.div`
   display: flex;

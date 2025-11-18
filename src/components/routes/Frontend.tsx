@@ -1,8 +1,9 @@
 import React, { memo } from 'react'
+import List from '../home/List'
 
 const Frontend: React.FC = memo(() => {
   return (
-    <div>Frontend</div>
+    <List />
   )
 })
 

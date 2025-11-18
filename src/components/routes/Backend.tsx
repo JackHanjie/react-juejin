@@ -1,8 +1,9 @@
 import React, { memo } from 'react'
+import List from '../home/List'
 
 const Backend: React.FC = memo(() => {
   return (
-    <div>Backend</div>
+    <List />
   )
 })
 

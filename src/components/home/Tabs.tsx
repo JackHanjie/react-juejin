@@ -1,12 +1,18 @@
 import React, { memo, useState } from 'react'
 import styled from 'styled-components'
 
-const Tabs = memo(() => {
+interface TabsProps {
+  onTabChange?: (index: number) => void
+}
+
+const Tabs = memo((props: TabsProps) => {
+  const { onTabChange } = props
   const [activeTab, setActiveTab] = useState(0)
   
     // 处理标签页点击事件
     const handleTabClick = (index: number) => {
       setActiveTab(index)
+      onTabChange?.(index)
     }
   
     // 标签页数据

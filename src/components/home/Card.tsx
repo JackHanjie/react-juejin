@@ -26,7 +26,6 @@ const Car_d = memo(() => {
               100
             </span>
           </Footer>
-
         </Card>
         <Img src="https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/28884c8a5f6c448894f33550b0a728bd~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5o6Y6YeR6ICF6Zi_6LGq:q75.awebp?rk3s=f64ab15b&x-expires=1763956690&x-signature=EwT%2B%2BqMQrvvc1w%2Bs6E9PqfqYjVo%3D" alt="" />
       </Content>
@@ -40,7 +39,7 @@ export default Car_d
 const Line = styled.div`
   height: 1px;
   margin: -5px 20px;
-  background-color: #ccc;
+  background-color: #f5f5f5;
 `
 
 const Content = styled.div`
@@ -76,8 +75,6 @@ const Card = styled.div`
   gap: 3px;
   font-size: 14px;
   color:#8A919F;
-
-  
 `
 const Title = styled.div`
   color: #252933;

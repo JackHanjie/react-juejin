@@ -1,8 +1,9 @@
 import React, { memo } from 'react'
+import List from '../home/List'
 
 const Following: React.FC = memo(() => {
-  return (
-    <div>Following</div>
+  return (  
+    <List />
   )
 })
 

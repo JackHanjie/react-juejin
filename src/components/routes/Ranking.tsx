@@ -1,8 +1,9 @@
 import React, { memo } from 'react'
+import List from '../home/List'
 
 const Ranking: React.FC = memo(() => {
   return (
-    <div>Ranking</div>
+    <List />
   )
 })
 
